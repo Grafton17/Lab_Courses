@@ -134,9 +134,9 @@ set_name = 'Medie_condizionali_10_0'
 
 for tau in tau_shifts:
     
-    # General formula for the t_index, when the 'tau_shifts' array is symmetric to 0:
+    # General formula for the t_index, where the 'tau_shifts' array is not necessary symmetric to 0:
     #
-    # t_index = int((tau + highest tau_shift) / (distance between two tau_shifts))
+    # t_index = int((tau - lowest tau_shift) / (distance between two tau_shifts))
     
     t_index = int((tau + 100000)/400)   
     # t_index = int((tau + 100)/100)
