@@ -1,3 +1,23 @@
+#---------- Compute the conditional average, save the poloidal visualization and its time evolution
+
+#---------- COMPUTE CONDITIONAL AVERAGE
+
+# The function computes the C.A. for a given point in space, where the 'meas' signal
+# is sampled, which is acquired simultaneously with the reference signal 'ref' in a difference spot.
+#
+#
+# The conditional bounds for the ref signal can be given in std deviations or not,
+# it's up to the user to set it via 'use_std' boolean variable (default to True).
+#
+# The 'tau_shifts' array contains all the time shifts that the user want to sample
+# from the 'meas' signal when the searched condition triggers on the 'ref' signal.
+# It defaults to [0], which means that only zero shifted points are conditionally
+# sampled from the 'meas' signal.
+
+# For each tau_shift, the conditional mean is appended to the 'all_cond_means'
+# array, which means that the order of the cond_means in the latter will be the 
+# same as the given order in the 'tau_shifts' array.
+
 def conditional_sampling(ref, meas, low_bound = -np.inf, high_bound = np.inf,
                          use_std = True, tau_shifts = np.array([0])):
     
