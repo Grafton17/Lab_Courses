@@ -31,12 +31,12 @@
 
 #---------- Simple mean for NO TRIGGER VALUES
 
-# all_mean = np.zeros(171)
+# all_mean = np.zeros(81)
 
 # j = 0
-# for i in range(0, 172):
-#     if i==9:
-#         continue
+# for i in range(0, 81):
+#     # if i==9:
+#     #     continue
 #     print(f"Status: i = {i}/171 and j = {j}/171", end="\r")
         
 #     filename = path + ppath + '/' + f'{i}.txt'
@@ -45,29 +45,31 @@
 #     all_mean[j] = np.mean(data[:, 2])
 #     j += 1
     
-# set_name = 'Medie_condizionali_10_4'
+# set_name = 'Medie_condizionali_5_4'
 # filepath = set_name + '/No_ref'
 # np.savetxt(path + f'/Programmi/Analisi condizionale/Measuring probe/{filepath}.txt', all_mean)
 
 #---------- Graph for NO TRIGGER VALUES
 
-# set_name = 'Medie_condizionali_10_4'
+# set_name = 'Medie_condizionali_5_4'
 # filepath = set_name + '/No_ref'
-# pos = np.loadtxt(path + '/Programmi/Analisi condizionale/giusti10_DA_USARE.txt')
+# pos = np.loadtxt(path + '/Programmi/Analisi condizionale/giusti5_DA_USARE.txt')
 # means = np.loadtxt(path + f'/Programmi/Analisi condizionale/Measuring probe/{filepath}.txt')
         
 # xpos = pos[:, 3]
 # ypos = pos[:, 4]
-# xside = [-80, -70, -60, -50, -40, -30, -20, -10, 0, 10, 20, 30, 40, 50, 60, 70]
-# yside = [-80, -70, -60, -50, -40, -30, -20, -10, 0, 10, 20, 30, 40, 50, 60, 70, 80]
+# # xside = [-80, -70, -60, -50, -40, -30, -20, -10, 0, 10, 20, 30, 40, 50, 60, 70]
+# # yside = [-80, -70, -60, -50, -40, -30, -20, -10, 0, 10, 20, 30, 40, 50, 60, 70, 80]
+# xside = [-20, -15, -10, -5, 0, 5, 10, 15, 20]
+# yside = [-20, -15, -10, -5, 0, 5, 10, 15, 20]
 # X, Y = np.meshgrid(xside, yside)
 
 # z = means
 
 # grid_z0 = griddata((xpos, ypos), z, (X, Y), method='linear')
 
-# plt.imshow(grid_z0, interpolation = 'hamming', origin = 'lower',
-#            extent = (-85, 75, -85, 85),
+# plt.imshow(grid_z0, interpolation = 'Hamming', origin = 'lower',
+#            extent = (-22.5, 22.5, -22.5, 22.5),   # For 10 resolution: (-85, 75, -85, 85)
 #            aspect = 'auto', cmap = 'Spectral', vmin = -50., vmax = +3)
     
 # plt.plot(xpos, ypos, 'ok', alpha=0.5, markersize=2)
@@ -75,9 +77,8 @@
 # plt.colorbar().set_label('$V_F$', fontsize=16)
 # plt.xlabel('R [cm]')
 # plt.ylabel('Z [cm]')
-# plt.title(rf'Pure average of $V_M$')
+# plt.title(r'Unconditional average - 2$^{nd}$ set')
 # plt.minorticks_on()
-# plt.grid()
 
 
 
