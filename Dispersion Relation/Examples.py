@@ -5,7 +5,7 @@
 # E[0] refers to E's time evolution at position x = 0
 # E[199] refers to E's time evolution at position x = 199
 #
-# An example of E is loaded into the "Dispersion Relation" directory as "Example_E.txt"
+# An example of E is loaded into the "Example_E" directory
 
 # Please note, at that time I wasn't familiar with the pcolormesh function,
 # therefore the drawing is pretty cumbersome. For example, I used a strange log scale
