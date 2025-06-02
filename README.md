@@ -1,5 +1,5 @@
 # Lab_Courses
-Here I put some of my (janky) hand written Python scripts used for SP.
+Here I put some of my (janky) hand written Python scripts written during LCs.
 
 The purpose of this repository is to keep at hand some functions that I have developed personally in the context of the laboratoy courses in my Master degree. Some of these routines already exist in Python, therefore they are just a rough rewriting of more sophisticated and optimized code, while some of them are specifically designed for my lab experiences. 
 
