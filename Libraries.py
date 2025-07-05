@@ -47,3 +47,5 @@ mpl.rcParams['axes.titlesize'] = 16
 mpl.rcParams['axes.titleweight'] = 'bold'
 mpl.rcParams['legend.fontsize'] = 16
 mpl.rcParams['figure.figsize'] = (8, 6)
+mpl.rcParams['font.size'] = 12
+mpl.rcParams['savefig.bbox'] = 'tight'
