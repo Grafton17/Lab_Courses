@@ -9,7 +9,7 @@ I have to say, I do not put __ALL__ my code here, but just what would be cumbers
 A short and not exhaustive list of the objectives of the lab courses:
 - PLASMA PHYSICS I: investigate the formation of travelling linear waves in a simulated plasma system;
 - PLASMA PHYSICS I: analyze the turbulent plasma state inside the [Thorello device](https://fusenet.eu/node/517);
-- PLASMA PHYSICS II: learn how to use a LaBr3:Ce detector and its properties and how to analyze its data.
+- PLASMA PHYSICS II: learn how to use a LaBr3:Ce detector and analyze properly its data.
 
 # Summary
 
